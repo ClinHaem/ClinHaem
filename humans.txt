@@ -1,0 +1,10 @@
+/* TEAM */
+Developer: ChatGPT (starter template)
+Designer: ClinHaem
+Site: https://www.clinhaem.com
+
+/* THANKS */
+You, the learners.
+
+/* TECHNOLOGY */
+Static HTML/CSS/JS.

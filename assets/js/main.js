@@ -1,1 +1,1 @@
-console.log('ClinHaem site loaded');
+console.log('ClinHaem site loaded.');

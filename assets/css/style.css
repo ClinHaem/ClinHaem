@@ -1,1 +1,38 @@
-body { font-family: Arial, sans-serif; margin: 2rem; } h1 { color: #E61C3F; }
+
+:root {
+  --c-primary: #E61C3F;
+  --c-dark: #152238;
+  --c-mid: #2A3B5E;
+  --c-light: #F5F7FB;
+  --c-accent: #10B981;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: var(--c-dark); background: var(--c-light); line-height: 1.6; }
+.container { max-width: 1000px; margin: 0 auto; padding: 1.2rem; }
+.site-header { background: #fff; border-bottom: 1px solid #eaeaea; position: sticky; top: 0; z-index: 10; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; color: var(--c-dark); font-weight: 700; }
+.brand img { width: 34px; height: 34px; }
+.nav a { margin-left: 1rem; text-decoration: none; color: var(--c-mid); }
+.nav a:hover { color: var(--c-primary); }
+.hero { background: linear-gradient(135deg, var(--c-primary), var(--c-dark)); color:#fff; padding: 3rem 2rem; border-radius: 12px; margin: 1.5rem 0; }
+.hero h1 { margin-top: 0; font-size: clamp(1.8rem, 4vw, 2.5rem); }
+.btn { display: inline-block; background: #fff; color: var(--c-dark); padding: .7rem 1rem; border-radius: 8px; text-decoration: none; font-weight: 700; }
+.btn:hover { background: var(--c-accent); color: #fff; }
+.highlights { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+article.course .lede { font-size: 1.1rem; color: var(--c-mid); }
+.course-meta p { margin: .2rem 0; }
+.faq details { background:#fff; border:1px solid #eee; padding: .6rem .8rem; border-radius: 8px; margin:.6rem 0; }
+.site-footer { margin-top: 3rem; border-top: 1px solid #eaeaea; background: #fff; }
+.site-footer p { margin:.5rem 0; color:#556; }
+.post h1 { margin-bottom: .2rem; }
+.post .post-meta { color: #667; font-size: .9rem; margin-bottom: 1rem; }
+form label { display:block; margin:.6rem 0; }
+input, textarea { width:100%; padding:.6rem; border:1px solid #ccd; border-radius: 8px; }
+button.btn { border: none; cursor: pointer; }
+.bloglist { list-style: none; padding: 0; }
+.bloglist li { background:#fff; border:1px solid #eee; border-radius: 8px; padding:.8rem; margin:.6rem 0; }
+@media (max-width: 640px) {
+  .nav a { margin-left: .6rem; }
+}
